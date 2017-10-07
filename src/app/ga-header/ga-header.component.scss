@@ -5,7 +5,7 @@ ga-header {
   }
 
   .header-background {
-    background: url(app/images/header.jpg) no-repeat center center/cover;
+    background: url(/app/images/header.jpg) no-repeat center center/cover;
 
     &::before {
       background-color: rgba(0, 0, 0, 0.7);
@@ -37,14 +37,14 @@ ga-header {
   
   .page-brand {
     text-indent: -9999px;
-    background: url(app/images/logo.png) no-repeat center center/cover;
+    background: url(/app/images/logo.png) no-repeat center center/cover;
     height: 62px;
     width: 80px;
     margin-left: 20px; 
     z-index: 1030;
 
     @media ($mq-small) {
-      background: url(app/images/logo-completa.png) no-repeat center center/cover;
+      background: url(/app/images/logo-completa.png) no-repeat center center/cover;
       width: 197px;
       height: 113px;
     }
