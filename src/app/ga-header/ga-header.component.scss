@@ -1,11 +1,11 @@
 ga-header {
   .page-header {
-    height: 100vh;
+    height: 80%;
     margin-top: -30px;
   }
 
   .header-background {
-    background: url(app/images/header.png) no-repeat center center/cover;
+    background: url(app/images/header.jpg) no-repeat center center/cover;
 
     &::before {
       background-color: rgba(0, 0, 0, 0.7);
@@ -23,6 +23,7 @@ ga-header {
       color: white;
       font-size: 40px;
       padding-right: 20px;
+      z-index: 1030;
 
       @media ($mq-medium) {
         display: none;
@@ -89,8 +90,13 @@ ga-header {
   }
 
   .menu {
+    display: none;
     padding-right: 20px;
     z-index: 1030;
+
+    @media ($mq-medium) {
+      display: block;
+    }
     
     .menu-items {
       

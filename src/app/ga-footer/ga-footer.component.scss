@@ -1,0 +1,64 @@
+ga-footer {
+  .footer-bg {
+    background: url(app/images/footer.png) no-repeat center center/cover;
+    height: 150px;
+    width: 100%;
+  }
+  
+  .page-footer {
+    color: white;
+    height: 100%;
+    background-color: $primary-color;
+  }
+  
+  .footer-newsletter {
+    letter-spacing: 5px;
+    text-align: center;
+  
+    label {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .footer-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media ($mq-medium) {
+      flex-direction: row;
+    }
+  
+    div {
+      padding: 20px;
+    }
+  }
+  
+  .footer-logo {
+    width: 197px;
+    height: 113px;
+
+    @media ($mq-medium) {
+      width: 50%;
+      border-right: 4px solid white;
+    }
+  }
+  
+  .footer-facebook {
+    @media ($mq-medium) {
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  
+  .footer-address {
+    font-size: 18px;
+    text-align: center;
+  }
+}

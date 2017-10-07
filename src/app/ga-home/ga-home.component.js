@@ -2,13 +2,6 @@
   'use strict';
 
   angular.module('GenteAmiga').component('gaHome', {
-    templateUrl: 'app/ga-home/ga-home.component.html',
-    controller: HomeController
+    templateUrl: 'app/ga-home/ga-home.component.html'
   });
-
-  HomeController.$inject = [];
-
-  function HomeController() {
-
-  }
 })(angular);
