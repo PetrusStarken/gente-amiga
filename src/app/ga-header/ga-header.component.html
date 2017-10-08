@@ -1,33 +1,36 @@
-<nav class="page-navbar">
-  <a href="/" class="page-brand" ng-mousedown="$ctrl.toggleMenu(true)">ONG Gente Amiga</a>
-  <a class="menu-toggle" ng-click="$ctrl.toggleMenu($ctrl.menuActive)">
-    <i class="fa fa-bars"></i>
-  </a>
 
-  <div class="menu">
+<div class="page-header">
+  <nav class="page-navbar">
+    <a href="/" class="page-brand" ng-mousedown="$ctrl.toggleMenu(true)">ONG Gente Amiga</a>
+    <a class="menu-toggle" ng-click="$ctrl.toggleMenu($ctrl.menuActive)">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="menu">
+      <ul class="menu-items">
+        <li><a href="/quem-somos">Quem Somos</a></li>
+        <li><a href="/quero-ajudar">Quero Ajudar</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-banner image-background banner-background">
+    <div class="page-advertising">
+      <span class="page-advertising-title">A sua ajuda faz a diferença</span>
+      <div class="page-advertising-description">Colabore e construa um futuro promissor para nossas crianças</div>
+      <button type="submit" class="button-control page-advertising-button">Contribua</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" ng-show="$ctrl.menuActive">
     <ul class="menu-items">
-      <li><a href="/quem-somos">Quem Somos</a></li>
-      <li><a href="/quero-ajudar">Quero Ajudar</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/contato">Contato</a></li>
+      <li><a href="/" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Home</a></li>
+      <li><a href="/quem-somos" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Quem Somos</a></li>
+      <li><a href="/quero-ajudar" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Quero Ajudar</a></li>
+      <li><a href="/blog" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Blog</a></li>
+      <li><a href="/contato" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Contato</a></li>
     </ul>
   </div>
-</nav>
-
-<header class="page-header image-background header-background">
-  <div class="page-advertising">
-    <span class="page-advertising-title">A sua ajuda faz a diferença</span>
-    <div class="page-advertising-description">Colabore e construa um futuro promissor para nossas crianças</div>
-    <button type="submit" class="button-control page-advertising-button">Contribua</button>
-  </div>
-</header>
-
-<div class="mobile-menu" ng-show="$ctrl.menuActive">
-  <ul class="menu-items">
-    <li><a href="/" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Home</a></li>
-    <li><a href="/quem-somos" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Quem Somos</a></li>
-    <li><a href="/quero-ajudar" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Quero Ajudar</a></li>
-    <li><a href="/blog" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Blog</a></li>
-    <li><a href="/contato" ng-mousedown="$ctrl.toggleMenu($ctrl.menuActive)">Contato</a></li>
-  </ul>
 </div>

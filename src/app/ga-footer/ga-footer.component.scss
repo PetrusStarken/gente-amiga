@@ -28,7 +28,7 @@ ga-footer {
     align-items: center;
     text-align: center;
 
-    @media ($mq-medium) {
+    @media ($mq-small) {
       flex-direction: row;
     }
   
@@ -41,19 +41,15 @@ ga-footer {
     width: 197px;
     height: 113px;
 
-    @media ($mq-medium) {
+    @media ($mq-small) {
       width: 50%;
       border-right: 4px solid white;
     }
   }
   
   .footer-facebook {
-    @media ($mq-medium) {
+    @media ($mq-small) {
       width: 50%;
-    }
-
-    img {
-      width: 100%;
     }
   }
   
