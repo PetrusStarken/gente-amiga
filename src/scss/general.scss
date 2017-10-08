@@ -4,7 +4,15 @@ body, html {
 
 body {
   font-family: 'Varela Round', sans-serif;
-  font-size: 27px;
+  font-size: 18px;
+
+  @media ($mq-small) {
+    font-size: 22px;
+  }
+
+  @media ($mq-medium) {
+    font-size: 27px;
+  }
 }
 
 button {
@@ -23,6 +31,7 @@ button {
 input:hover,
 button:hover {
   opacity: 0.8;
+  border: 0;
 }
 
 .container {
@@ -30,12 +39,12 @@ button:hover {
   margin: auto;
 
   @media ($mq-small) {
-    padding-top: 20px 0 0 0;
+    padding: 20px 0 0 0;
     width: 80%;
   }
 
   @media ($mq-medium) {
-    padding-top: 20px 0 0 0;
+    padding: 20px 0 0 0;
     width: 70%;
   }
 }
@@ -75,7 +84,7 @@ main {
 .main-header {
   padding: 40px 50px;
   width: 80%;  
-  font-size: 40px;
+  font-size: 25px;
   color: white;
   text-align: center;
   margin: auto;
@@ -83,9 +92,17 @@ main {
   position: relative;
   border-radius: 10px;
   text-transform: uppercase;
+
+  @media ($mq-medium) {
+    font-size: 40px;
+  }
 }
 
 .main-content {
-  padding-top: 40px;
+  padding-top: 0;
   text-align: justify;
+
+  @media ($mq-medium) {
+    padding-top: 40px;
+  }
 }

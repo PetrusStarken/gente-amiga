@@ -1,7 +1,11 @@
 ga-header {
   .page-header {
-    height: 80%;
+    height: 70vh;
     margin-top: -30px;
+
+    @media ($mq-medium) {
+      height: 100vh;
+    }
   }
 
   .header-background {
@@ -15,9 +19,6 @@ ga-header {
   .page-navbar {
     height: 100px;
     background-color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     .menu-toggle {
       color: white;
@@ -66,7 +67,7 @@ ga-header {
     font-size: 25px;
     margin-bottom: 20px;
 
-    @media ($mq-small) {
+    @media ($mq-medium) {
       font-size: 40px;
     }
   }
